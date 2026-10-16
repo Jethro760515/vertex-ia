@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VERTEX IA - Soluciones Digitales Inteligentes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="img/Vertex IA.jpeg" alt="Logo VERTEX IA">
+
+        <h1>VERTEX IA</h1>
+
+        <h2>Soluciones Digitales Inteligentes</h2>
+
+        <h3>Servicios tecnológicos</h3>
+
+        <p>
+            Vertex IA es una empresa orientada al desarrollo de soluciones
+            digitales inteligentes mediante tecnología, automatización
+            e inteligencia artificial.
+        </p>
+
+    </header>
+
+
+    <nav>
+
+    <a href="#servicios">Servicios</a>
+
+    <a href="#nosotros">Sobre nosotros</a>
+
+    <a href="#contacto">Contacto</a>
+
+    <a href="practica_clase5/registro_productos.html">Registro de productos</a>
+
+    <a href="practica_clase5/venta_productos.html">Venta de productos</a>
+
+</nav>
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- SERVICIOS -->
+        <!-- ========================= -->
+
+        <section id="servicios">
+
+            <h2>Servicios</h2>
+
+            <div class="servicios">
+
+                <div class="tarjeta">
+
+                    <h3>Desarrollo web</h3>
+
+                    <p>
+                        Diseño y desarrollo de páginas web.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Automatización</h3>
+
+                    <p>
+                        Automatización de procesos mediante herramientas digitales.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Inteligencia Artificial</h3>
+
+                    <p>
+                        Soluciones tecnológicas utilizando inteligencia artificial.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Contenido digital</h3>
+
+                    <p>
+                        Diseño y elaboración de contenido digital.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Documentos y presentaciones</h3>
+
+                    <p>
+                        Elaboración de documentos profesionales y presentaciones.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="servicioSeleccionado">
+                Seleccione un servicio para obtener más información.
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SOBRE NOSOTROS -->
+        <!-- ========================= -->
+
+        <section id="nosotros">
+
+            <h2>Sobre nosotros</h2>
+
+            <p>
+                VERTEX IA es una iniciativa orientada a brindar soluciones
+                tecnológicas para personas, profesionales y pequeñas empresas,
+                utilizando herramientas digitales, automatización e
+                inteligencia artificial.
+            </p>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CONTACTO -->
+        <!-- ========================= -->
+
+        <section id="contacto">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Para consultas o información sobre nuestros servicios,
+                puede comunicarse con VERTEX IA.
+            </p>
+
+
+            <p>
+                Correo:
+                <a href="mailto:jethroherran@gmail.com">
+                    jethroherran@gmail.com
+                </a>
+            </p>
+
+
+            <!-- ========================= -->
+            <!-- FORMULARIO -->
+            <!-- ========================= -->
+
+            <h3>Solicita información</h3>
+
+            <form id="formulario">
+
+                <label for="nombre">
+                    Nombres y apellidos:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    minlength="3"
+                >
+
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required
+                >
+
+
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    minlength="9"
+                    maxlength="9"
+                >
+
+
+                <label for="empresa">
+                    Empresa o negocio:
+                </label>
+
+                <input
+                    type="text"
+                    id="empresa"
+                    name="empresa"
+                >
+
+
+                <label for="servicio">
+                    Servicio de interés:
+                </label>
+
+                <select
+                    id="servicio"
+                    name="servicio"
+                    required
+                >
+
+                    <option value="">
+                        Seleccione una opción
+                    </option>
+
+                    <option value="Desarrollo web">
+                        Desarrollo web
+                    </option>
+
+                    <option value="Automatización">
+                        Automatización
+                    </option>
+
+                    <option value="Inteligencia Artificial">
+                        Inteligencia Artificial
+                    </option>
+
+                    <option value="Contenido digital">
+                        Contenido digital
+                    </option>
+
+                    <option value="Documentos y presentaciones">
+                        Documentos y presentaciones
+                    </option>
+
+                </select>
+
+
+                <!-- DESCRIPCIÓN DINÁMICA -->
+
+                <div id="descripcionServicio">
+                    Seleccione un servicio para conocer más detalles.
+                </div>
+
+
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    required
+                    minlength="10"
+                ></textarea>
+
+
+                <button type="submit">
+                    Enviar consulta
+                </button>
+
+            </form>
+
+
+            <!-- MENSAJE DE VALIDACIÓN -->
+
+            <div id="mensajeFormulario">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 VERTEX IA - Soluciones Digitales Inteligentes
+        </p>
+
+    </footer>
+
+
+    <!-- ========================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================= -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            // ==========================================
+            // FORMULARIO
+            // ==========================================
+
+            const formulario =
+                document.getElementById("formulario");
+
+            const mensajeFormulario =
+                document.getElementById("mensajeFormulario");
+
+
+            formulario.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+
+                // ==========================================
+                // OBTENER DATOS
+                // ==========================================
+
+                const nombre =
+                    document.getElementById("nombre").value.trim();
+
+                const correo =
+                    document.getElementById("correo").value.trim();
+
+                const telefono =
+                    document.getElementById("telefono").value.trim();
+
+                const empresa =
+                    document.getElementById("empresa").value.trim();
+
+                const servicio =
+                    document.getElementById("servicio").value;
+
+                const mensaje =
+                    document.getElementById("mensaje").value.trim();
+
+
+                // ==========================================
+                // VALIDACIÓN
+                // ==========================================
+
+                if (nombre.length < 3) {
+
+                    mensajeFormulario.textContent =
+                        "Ingrese correctamente sus nombres y apellidos.";
+
+                    mensajeFormulario.className = "mensaje-error";
+
+                    return;
+                }
+
+
+                if (telefono.length !== 9 || isNaN(telefono)) {
+
+                    mensajeFormulario.textContent =
+                        "El teléfono debe contener exactamente 9 números.";
+
+                    mensajeFormulario.className = "mensaje-error";
+
+                    return;
+                }
+
+
+                if (servicio === "") {
+
+                    mensajeFormulario.textContent =
+                        "Seleccione un servicio de interés.";
+
+                    mensajeFormulario.className = "mensaje-error";
+
+                    return;
+                }
+
+
+                if (mensaje.length < 10) {
+
+                    mensajeFormulario.textContent =
+                        "El mensaje debe contener al menos 10 caracteres.";
+
+                    mensajeFormulario.className = "mensaje-error";
+
+                    return;
+                }
+
+
+                // ==========================================
+                // DATOS CORRECTOS
+                // ==========================================
+
+                mensajeFormulario.textContent =
+                    "Datos correctos. Preparando el correo...";
+
+                mensajeFormulario.className =
+                    "mensaje-exito";
+
+
+                // ==========================================
+                // CREAR CORREO
+                // ==========================================
+
+                const asunto =
+                    "Consulta desde la página web de VERTEX IA";
+
+
+                const cuerpo =
+                    "Nombre: " + nombre + "\n" +
+                    "Correo: " + correo + "\n" +
+                    "Teléfono: " + telefono + "\n" +
+                    "Empresa o negocio: " + empresa + "\n" +
+                    "Servicio de interés: " + servicio + "\n\n" +
+                    "Mensaje:\n" + mensaje;
+
+
+                const urlGmail =
+                    "https://mail.google.com/mail/?view=cm" +
+                    "&fs=1" +
+                    "&to=jethroherran@gmail.com" +
+                    "&su=" + encodeURIComponent(asunto) +
+                    "&body=" + encodeURIComponent(cuerpo);
+
+
+                window.open(urlGmail, "_blank");
+
+            });
+
+
+            // ==========================================
+            // TARJETAS DE SERVICIOS
+            // ==========================================
+
+            const tarjetas =
+                document.querySelectorAll(".tarjeta");
+
+
+            tarjetas.forEach(function (tarjeta) {
+
+                tarjeta.addEventListener("click", function () {
+
+                    const servicio =
+                        tarjeta.querySelector("h3").textContent;
+
+
+                    const resultado =
+                        document.getElementById("servicioSeleccionado");
+
+
+                    resultado.textContent =
+                        "Servicio seleccionado: " + servicio;
+
+                });
+
+            });
+
+
+            // ==========================================
+            // EVENTO CHANGE
+            // ==========================================
+
+            const selectorServicio =
+                document.getElementById("servicio");
+
+            const descripcionServicio =
+                document.getElementById("descripcionServicio");
+
+
+            selectorServicio.addEventListener("change", function () {
+
+                const servicioSeleccionado =
+                    selectorServicio.value;
+
+
+                if (servicioSeleccionado === "") {
+
+                    descripcionServicio.textContent =
+                        "Seleccione un servicio para conocer más detalles.";
+
+                }
+
+                else if (servicioSeleccionado === "Desarrollo web") {
+
+                    descripcionServicio.textContent =
+                        "Creamos páginas web modernas, funcionales y adaptables.";
+
+                }
+
+                else if (servicioSeleccionado === "Automatización") {
+
+                    descripcionServicio.textContent =
+                        "Automatizamos tareas y procesos para mejorar la productividad.";
+
+                }
+
+                else if (servicioSeleccionado === "Inteligencia Artificial") {
+
+                    descripcionServicio.textContent =
+                        "Desarrollamos soluciones utilizando herramientas de inteligencia artificial.";
+
+                }
+
+                else if (servicioSeleccionado === "Contenido digital") {
+
+                    descripcionServicio.textContent =
+                        "Creamos contenido digital para comunicación y promoción.";
+
+                }
+
+                else if (servicioSeleccionado === "Documentos y presentaciones") {
+
+                    descripcionServicio.textContent =
+                        "Elaboramos documentos profesionales y presentaciones digitales.";
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
